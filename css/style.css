@@ -1,10 +1,93 @@
 :root {
   --black: #000000;
-  --white: #FFFFFF;
+  --white: #ffffff;
 
-  --gold: #F3A60D;
-  --light-gold: #D39C4A;
+  --gold: #f3a60d;
+  --light-gold: #d39c4a;
 
-  --dark-gray: #2B2B2B;
-  --light-gray: #F2F2F2;
+  --charcoal: #1c1c1c;
+  --dark-gray: #2b2b2b;
+  --light-gray: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+header section {
+  margin: 0 auto;
+  padding: 32px 80px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.logo-icon {
+  width: 40px;
+  display: block;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Navigation */
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--charcoal);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Actions */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-actions img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.profile-icon {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
 }
