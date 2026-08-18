@@ -9,9 +9,67 @@
 
 /* Mobile */
 
+@media screen and (max-width: 425px) {
+  .header section {
+    padding: 0;
+  }
+  .header-container {
+    position: relative;
+    justify-content: space-between;
+    padding: 32px 20px;
+  }
+
+  /* Menu */
+
+  .menu-icon {
+    display: block;
+    width: 24px;
+  }
+
+  /* Navigation */
+
+  nav {
+    display: none;
+  }
+
+  /* Logo */
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 6px;
+  }
+
+  .logo-icon {
+    width: 32px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  /* Actions */
+
+  .header-actions {
+    gap: 16px;
+  }
+
+  .search-icon,
+  .profile-icon {
+    display: none;
+  }
+
+  .shopping-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   header section {
-    padding: 24px 20px;
+    padding: 0;
   }
 
   .header-container {
