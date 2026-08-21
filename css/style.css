@@ -167,12 +167,15 @@ nav a {
   font-size: 5.5rem;
 }
 
-.hero .hero-word {
-  position: relative;
+.hero-word {
   display: inline-block;
+  position: relative;
+  width: 0.65em;
+  height: 1em;
+  vertical-align: middle;
 }
 
-.hero .hero-oval {
+.hero-oval {
   position: absolute;
   width: 125px;
   height: 45px;
@@ -181,7 +184,6 @@ nav a {
   transform: translate(-50%, -50%);
   border: 3px solid #000;
   border-radius: 999px;
-  pointer-events: none;
 }
 
 .hero .hero-content p {
