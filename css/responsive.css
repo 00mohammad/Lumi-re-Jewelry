@@ -28,7 +28,6 @@
 
   .hero .hero-content p {
     max-width: 480px;
-
     font-size: 20px;
   }
 
@@ -48,7 +47,6 @@
 
   .hero-oval {
     width: 100px;
-
     height: 38px;
   }
 }
@@ -66,9 +64,7 @@
 
   .header-container {
     position: relative;
-
     justify-content: space-between;
-
     padding: 32px 20px;
   }
 
@@ -76,7 +72,6 @@
 
   .menu-icon {
     display: block;
-
     width: 24px;
   }
 
@@ -90,11 +85,8 @@
 
   .logo {
     position: absolute;
-
     left: 50%;
-
     transform: translateX(-50%);
-
     gap: 6px;
   }
 
@@ -119,9 +111,7 @@
 
   .shopping-icon {
     display: block;
-
     width: 24px;
-
     height: 24px;
   }
 
@@ -143,7 +133,6 @@
 
   .hero .hero-content p {
     font-size: 16px;
-
     line-height: 1.2;
   }
 
@@ -153,19 +142,16 @@
 
   .hero .asset-image {
     width: 87px;
-
     margin-top: 20px;
   }
 
   .hero .hero-image img {
     max-width: 300px;
-
     display: none;
   }
 
   .hero-secondary-image {
     display: block;
-
     max-width: 400px;
   }
 
@@ -177,10 +163,13 @@
 
   .hero-oval {
     width: 60px;
-
     height: 25px;
-
     border-width: 2px;
+    margin-left: -27px;
+  }
+
+  .hero-ver {
+    margin-left: 1.5rem;
   }
 }
 
@@ -191,9 +180,7 @@
 
   .header-container {
     position: relative;
-
     justify-content: space-between;
-
     padding: 32px 20px;
   }
 
@@ -201,7 +188,6 @@
 
   .menu-icon {
     display: block;
-
     width: 24px;
   }
 
@@ -215,11 +201,8 @@
 
   .logo {
     position: absolute;
-
     left: 50%;
-
     transform: translateX(-50%);
-
     gap: 6px;
   }
 
@@ -244,9 +227,7 @@
 
   .shopping-icon {
     display: block;
-
     width: 24px;
-
     height: 24px;
   }
 
@@ -268,7 +249,6 @@
 
   .hero .hero-content p {
     font-size: 16px;
-
     line-height: 1.2;
   }
 
@@ -278,20 +258,17 @@
 
   .hero .asset-image {
     width: 87px;
-
     margin-top: 20px;
   }
 
   .hero .hero-image img {
     max-width: 300px;
-
     display: none;
   }
 
   .hero-secondary-image {
     display: block;
-
-    max-width: 350px;
+    max-width: 300px;
   }
 
   /* Hero Oval */
@@ -302,9 +279,7 @@
 
   .hero-oval {
     width: 55px;
-
     height: 23px;
-
     border-width: 2px;
   }
 }

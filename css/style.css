@@ -134,6 +134,7 @@ nav a {
 
 .hero {
   width: 100%;
+  font-size: 1px;
 }
 
 .hero .header-bottom {
@@ -154,17 +155,21 @@ nav a {
 .hero .hero-title {
   position: relative;
   display: inline-block;
-  font-size: 5.5rem;
-  font-weight: 100;
-  line-height: 1.15;
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
 }
 
 .hero .hero-title:nth-child(2) {
-  font-size: 5rem;
+  padding-bottom: 10px;
+  font-size: 7rem;
 }
 
 .hero .hero-title:nth-child(3) {
-  font-size: 5.5rem;
+  font-size: 7rem;
 }
 
 .hero-word {
@@ -180,7 +185,7 @@ nav a {
   width: 125px;
   height: 45px;
   top: 50%;
-  left: 50%;
+  left: 3.5rem;
   transform: translate(-50%, -50%);
   border: 3px solid #000;
   border-radius: 999px;
@@ -213,4 +218,8 @@ nav a {
 
 .hero-secondary-image {
   display: none;
+}
+
+.hero-ver {
+  margin-left: 3rem;
 }
