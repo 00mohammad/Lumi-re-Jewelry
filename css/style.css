@@ -223,3 +223,23 @@ nav a {
 .hero-ver {
   margin-left: 3rem;
 }
+
+.features-bar {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: #000;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.features-list p {
+  color: #fff;
+  white-space: nowrap;
+  font-size: 16px;
+}
