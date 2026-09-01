@@ -10,7 +10,6 @@
 @media screen and (max-width: 1200px) {
   .hero .header-bottom {
     gap: 5%;
-
     padding: 0 40px;
   }
 
@@ -57,10 +56,15 @@
   }
 }
 
-/* Tablet */
+/* ==========================================
+   Tablet
+========================================== */
 
 @media (max-width: 768px) {
-  .features-list {
+
+  /* Features */
+
+  .features-track {
     animation-duration: 15s;
   }
 
@@ -190,7 +194,9 @@
     margin-left: 1.5rem;
   }
 
-  .features-list {
+  /* Features */
+
+  .features-track {
     animation-duration: 12s;
   }
 

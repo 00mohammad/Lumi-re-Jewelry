@@ -74,6 +74,7 @@ nav a {
   font-size: 16px;
   font-weight: 400;
 }
+
 /* Actions */
 
 .header-actions {
@@ -231,11 +232,17 @@ nav a {
   padding: 20px 0;
 }
 
+.features-track {
+  display: flex;
+  width: max-content;
+  animation: move 20s linear infinite;
+  will-change: transform;
+}
+
 .features-list {
   display: flex;
   align-items: center;
-  width: max-content;
-  animation: move 20s linear infinite;
+  flex-shrink: 0;
 }
 
 .features-list p {
@@ -249,10 +256,12 @@ nav a {
 }
 
 .features-list img {
-  width: 20px;
-  height: 20px;
+  display: block;
+  object-fit: contain;
   flex-shrink: 0;
 }
+
+/* Animation */
 
 @keyframes move {
   from {
