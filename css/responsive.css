@@ -54,6 +54,25 @@
   .header section {
     margin: 0 auto;
   }
+
+  .collections {
+    padding: 60px 30px;
+  }
+
+  .collections-products {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .collection-image {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    height: 400px;
+  }
+
+  .product-image {
+    height: 220px;
+  }
 }
 
 /* ==========================================
@@ -61,7 +80,6 @@
 ========================================== */
 
 @media (max-width: 768px) {
-
   /* Features */
 
   .features-track {
@@ -209,6 +227,60 @@
     width: 14px;
     height: 14px;
   }
+
+  .collections {
+    padding: 30px 12px;
+  }
+
+  .collections-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* Collection Image */
+
+  .collection-image {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: 250px;
+  }
+
+  .collection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Product */
+
+  .product-card {
+    padding: 6px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .product-card h4 {
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .product-price {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+
+  .shopping-bag {
+    width: 16px;
+    height: 16px;
+    right: 7px;
+    bottom: 7px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -320,5 +392,74 @@
     height: 23px;
     border-width: 2px;
   }
-}
 
+  .collections-header h4 {
+    font-size: 22px;
+  }
+
+  .collections-more {
+    gap: 6px;
+  }
+
+  .collections-more p {
+    font-size: 14px;
+  }
+
+  .collections-more img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .collections {
+    padding: 25px 10px;
+  }
+
+  .collections-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  /* Collection Image */
+
+  .collection-image {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: 220px;
+  }
+
+  .collection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Product Card */
+  .product-card {
+    padding: 5px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .product-card h4 {
+    margin-top: 5px;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .product-price {
+    margin-top: 3px;
+    font-size: 9px;
+  }
+
+  .shopping-bag {
+    width: 14px;
+    height: 14px;
+    right: 6px;
+    bottom: 6px;
+  }
+}
