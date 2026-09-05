@@ -310,7 +310,10 @@ nav a {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  grid-auto-flow: row;
+  align-items: start;
+  justify-items: start;
+  margin-top: 85px;
 }
 
 /* Collection Image */
@@ -330,12 +333,11 @@ nav a {
 .product-card {
   position: relative;
   padding: 15px;
-  background-color: #f5f5f5;
 }
 
 .product-image {
-  width: 100%;
-  height: 250px;
+  width: 285px;
+  height: 280px;
   object-fit: cover;
   display: block;
 }
@@ -344,6 +346,7 @@ nav a {
   margin-top: 15px;
   font-size: 18px;
   font-weight: 500;
+  max-width: 80%;
 }
 
 .product-price {

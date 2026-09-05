@@ -5,6 +5,10 @@
 /* Laptop */
 
 @media screen and (max-width: 1440px) {
+  .hero-secondary-image {
+    width: 596px;
+    height: 234px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
