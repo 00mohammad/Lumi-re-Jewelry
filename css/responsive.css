@@ -170,10 +170,14 @@
 
   .hero .hero-title:nth-child(2) {
     font-size: 2.4rem;
+    transform: scaleX(1.7);
+    transform-origin: left;
   }
 
   .hero .hero-title:nth-child(3) {
     font-size: 2.6rem;
+    transform: scaleX(1.3);
+    transform-origin: left;
   }
 
   .hero .hero-content p {
@@ -366,10 +370,14 @@
 
   .hero .hero-title:nth-child(2) {
     font-size: 2.4rem;
+    transform: scaleX(1.7);
+    transform-origin: left;
   }
 
   .hero .hero-title:nth-child(3) {
     font-size: 2.6rem;
+    transform: scaleX(1.3);
+    transform-origin: left;
   }
 
   .hero .hero-content p {
