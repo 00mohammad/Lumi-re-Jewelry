@@ -5,9 +5,10 @@
 /* Laptop */
 
 @media screen and (max-width: 1440px) {
-  .hero-secondary-image {
-    width: 596px;
-    height: 234px;
+  .desktop-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -194,9 +195,15 @@
     display: none;
   }
 
-  .hero-secondary-image {
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
     display: block;
-    max-width: 400px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
   }
 
   /* Hero Oval */
@@ -384,9 +391,8 @@
     display: none;
   }
 
-  .hero-secondary-image {
-    display: block;
-    max-width: 350px;
+  .mobile-image {
+    max-width: 320px;
   }
 
   /* Hero Oval */

@@ -222,6 +222,10 @@ nav a {
   display: none;
 }
 
+.desktop-image {
+  display: none;
+}
+
 .hero-ver {
   margin-left: 3rem;
 }
@@ -277,7 +281,6 @@ nav a {
   justify-content: space-between;
   align-items: center;
 }
-
 
 .collections-more {
   display: flex;
