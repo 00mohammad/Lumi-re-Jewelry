@@ -231,7 +231,6 @@ nav a {
 
 .features-bar {
   width: 100%;
-  overflow: hidden;
   padding: 20px 0;
 }
 
@@ -242,38 +241,50 @@ nav a {
   will-change: transform;
 }
 
+/* Features Bar */
+
+.features-bar {
+  overflow: hidden;
+}
+
+.features-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
 .features-list {
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
 
+/* Text */
+
 .features-list p {
-  color: #fff;
-  white-space: nowrap;
-  font-weight: 400;
-  font-size: 24px;
   margin: 0;
-  padding: 20px 32px;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px 64px;
+  color: #fff;
+  background-color: #303030;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: 20px;
 }
+
+/* Stars */
 
 .features-list img {
+  width: 32px;
+  height: 32px;
   display: block;
-  object-fit: contain;
   flex-shrink: 0;
-}
-
-/* Animation */
-
-@keyframes move {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
+  object-fit: contain;
+  margin-left: -16px;
+  margin-right: -16px;
+  position: relative;
+  z-index: 2;
 }
 
 .collections-header {
