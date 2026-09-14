@@ -90,6 +90,14 @@
     margin-left: -14px;
     margin-right: -14px;
   }
+
+  .new-products {
+    padding: 55px 30px;
+  }
+
+  .products-grid {
+    gap: 12px;
+  }
 }
 
 /* Tablet */
@@ -313,6 +321,35 @@
     bottom: 0;
     width: 18px;
     height: 18px;
+  }
+  
+  .new-products {
+    padding: 45px 16px;
+  }
+
+  .products-header {
+    margin-bottom: 24px;
+  }
+
+  .products-heading h2 {
+    font-size: 24px;
+  }
+
+  .products-heading p {
+    font-size: 9px;
+  }
+
+  .products-arrows {
+    gap: 10px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 12px;
+  }
+
+  .product-image {
+    aspect-ratio: 1 / 1;
   }
 }
 
