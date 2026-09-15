@@ -360,11 +360,27 @@ nav a {
   display: block;
 }
 
+.product-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-title {
+  margin: 0;
+}
+
+.shopping-bag {
+  width: 20px;
+  height: 20px;
+}
+
 .new-products {
   width: 100%;
   padding: 68px 42px;
   background: #292929;
   color: #fff;
+  margin-top: 174px;
 }
 
 /* =========================
@@ -439,6 +455,16 @@ nav a {
 
 .product-card {
   min-width: 0;
+}
+
+.product-title {
+  max-width: 60%;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.product-price {
+  margin-top: 0.5rem;
 }
 
 .product-image {

@@ -10,6 +10,12 @@
     width: 100%;
     height: auto;
   }
+
+  .product-title {
+    max-width: 60%;
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -52,6 +58,12 @@
   .hero-oval {
     width: 100px;
     height: 38px;
+  }
+
+  .product-title {
+    max-width: 60%;
+    font-weight: 400;
+    font-size: 17px;
   }
 }
 
@@ -97,6 +109,12 @@
 
   .products-grid {
     gap: 12px;
+  }
+
+  .product-title {
+    max-width: 60%;
+    font-weight: 400;
+    font-size: 17px;
   }
 }
 
@@ -322,7 +340,7 @@
     width: 18px;
     height: 18px;
   }
-  
+
   .new-products {
     padding: 45px 16px;
   }
