@@ -312,6 +312,7 @@ nav a {
 
 .collections {
   width: 100%;
+  padding: 114px 79px;
 }
 
 .section-title {
@@ -322,13 +323,14 @@ nav a {
 
 .collections-products {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  margin-top: 85px;
+  grid-template-columns: 50% 14% 24%;
+  margin-top: 58px;
   align-items: center;
   grid-auto-flow: row;
-  align-content: center;
+  align-content: space-between;
   justify-content: center;
-  justify-items: stretch;
+  justify-items: start;
+  column-gap: 8rem;
 }
 
 /* =========================

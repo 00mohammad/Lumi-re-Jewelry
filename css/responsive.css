@@ -477,6 +477,7 @@
     max-width: 350px;
     width: 100%;
     height: auto;
+    padding-bottom: 47px;
   }
 
   /* Hero Oval */
@@ -517,7 +518,7 @@
     display: none;
   }
   .collections {
-    padding: 30px 12px;
+    padding: 63px 12px;
   }
 
   .collections-products {
@@ -687,6 +688,7 @@
 
   .mobile-image {
     max-width: 320px;
+    padding-bottom: 47px;
   }
 
   /* Hero Oval */
@@ -718,7 +720,7 @@
   }
 
   .collections {
-    padding: 25px 10px;
+    padding: 63px 10px;
   }
 
   .collections-products {
