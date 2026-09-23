@@ -65,6 +65,41 @@
     font-weight: 400;
     font-size: 17px;
   }
+
+  .featured-details {
+    display: flex;
+    padding: 8px 4px 0;
+    margin-top: 73%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .featured-list {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .featured-header {
+    margin-bottom: 61px;
+  }
+
+  .featured-products {
+    width: 1440px;
+    height: 824px;
+    background: #292929;
+    color: #fff;
+    margin-top: 174px;
+    box-sizing: border-box;
+    padding: 127px 80px;
+  }
 }
 
 @media screen and (max-width: 1024px) {

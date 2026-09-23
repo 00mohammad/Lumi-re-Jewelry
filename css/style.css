@@ -378,12 +378,11 @@ nav a {
 }
 
 .featured-products {
-  width: 100%;
-  padding: 24px 16px 60px;
   background: #292929;
   color: #fff;
   margin-top: 174px;
   box-sizing: border-box;
+  padding: 127px 80px;
 }
 
 /* =========================
@@ -394,7 +393,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 26px;
+  margin-bottom: 61px;
 }
 
 .featured-title h2 {
@@ -444,8 +443,12 @@ nav a {
 
 .featured-list {
   display: grid;
-  grid-template-columns: repeat(4, 195px);
-  gap: 19px;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-flow: row;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 /* =========================
@@ -470,8 +473,8 @@ nav a {
 
 .featured-image img {
   display: block;
-  width: 195px;
-  height: 195px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -480,12 +483,14 @@ nav a {
 ========================= */
 
 .featured-details {
-  width: 195px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 8px 4px 0;
+  margin-top: 73%;
   box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .featured-content h3 {
@@ -512,10 +517,8 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 18px;
   height: 18px;
-
   padding: 0;
   border: 0;
   background: transparent;
