@@ -1,21 +1,27 @@
-const track = document.querySelector(".features-track");
-const lists = document.querySelectorAll(".features-list");
+const track = document.querySelector('.features-track');
+const lists = document.querySelectorAll('.features-list');
 
-let position = 0;
-const speed = 1;
+if (track && lists.length) {
+  let position = 0;
+  const speed = 1;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-function moveFeatures() {
-  position -= speed;
+  function moveFeatures() {
+    if (prefersReducedMotion) {
+      return;
+    }
 
-  const firstListWidth = lists[0].offsetWidth;
+    position -= speed;
 
-  if (Math.abs(position) >= firstListWidth) {
-    position = 0;
+    const firstListWidth = lists[0].getBoundingClientRect().width;
+
+    if (Math.abs(position) >= firstListWidth) {
+      position = 0;
+    }
+
+    track.style.transform = `translate3d(${position}px, 0, 0)`;
+    requestAnimationFrame(moveFeatures);
   }
-
-  track.style.transform = `translateX(${position}px)`;
 
   requestAnimationFrame(moveFeatures);
 }
-
-moveFeatures();
