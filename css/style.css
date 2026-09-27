@@ -31,7 +31,7 @@ header section {
   padding: 32px 80px;
 }
 
-.header-container {
+.site-header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,22 +39,22 @@ header section {
 
 /* Logo */
 
-.logo {
+.brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.menu-icon {
+.site-header__menu-icon {
   display: none;
 }
 
-.logo-icon {
+.brand__icon {
   width: 40px;
   display: block;
 }
 
-.logo h1 {
+.brand__name {
   font-size: 24px;
   font-weight: 600;
 }
@@ -77,26 +77,26 @@ nav a {
 
 /* Actions */
 
-.header-actions {
+.site-header__actions {
   display: flex;
   align-items: center;
   gap: 28px;
 }
 
-.header-actions img {
+.site-header__actions img {
   width: 24px;
   height: 24px;
   object-fit: contain;
   position: static;
 }
 
-.profile-icon {
+.site-header__profile-image {
   width: 40px !important;
   height: 40px !important;
   border-radius: 50%;
 }
 
-.header-bottom {
+.hero__layout {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -106,21 +106,21 @@ nav a {
   gap: 10%;
 }
 
-.header-bottom h2 {
+.hero__layout h2 {
   font-size: 5.5rem;
   font-weight: 100;
   line-height: 1.15;
 }
 
-.header-bottom h2:nth-child(2) {
+.hero__layout h2:nth-child(2) {
   font-size: 5rem;
 }
 
-.header-bottom h2:nth-child(3) {
+.hero__layout h2:nth-child(3) {
   font-size: 5.5rem;
 }
 
-.header-bottom p {
+.hero__layout p {
   font-weight: 300;
   font-size: 24px;
   line-height: 1.6;
@@ -128,7 +128,7 @@ nav a {
   color: var(--gray);
 }
 
-.asset-image {
+.hero__assurance-seal {
   margin-top: 62px;
 }
 
@@ -139,21 +139,21 @@ nav a {
   font-size: 1px;
 }
 
-.hero .header-bottom {
+.hero .hero__layout {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero .hero-content {
+.hero .hero__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 4rem;
 }
 
-.hero .hero-title {
+.hero .hero__title {
   position: relative;
   display: inline-block;
   margin: 0;
@@ -164,16 +164,16 @@ nav a {
   letter-spacing: -0.05em;
 }
 
-.hero .hero-title:nth-child(2) {
+.hero .hero__title:nth-child(2) {
   padding-bottom: 10px;
   font-size: 7rem;
 }
 
-.hero .hero-title:nth-child(3) {
+.hero .hero__title:nth-child(3) {
   font-size: 7rem;
 }
 
-.hero-word {
+.hero__word {
   display: inline-block;
   position: relative;
   width: 0.65em;
@@ -181,7 +181,7 @@ nav a {
   vertical-align: middle;
 }
 
-.hero-oval {
+.hero__oval {
   position: absolute;
   width: 125px;
   height: 45px;
@@ -192,7 +192,7 @@ nav a {
   border-radius: 999px;
 }
 
-.hero .hero-content p {
+.hero .hero__content p {
   max-width: 560px;
   margin-top: 20px;
   color: var(--gray);
@@ -201,40 +201,40 @@ nav a {
   line-height: 1.6;
 }
 
-.hero .asset-image {
+.hero .hero__assurance-seal {
   margin-top: 62px;
 }
 
-.hero .hero-image {
+.hero .hero__media {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero .hero-image img {
+.hero .hero__media img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.hero-secondary-image {
+.hero__responsive-image {
   display: none;
 }
 
-.desktop-image {
+.hero__responsive-image--desktop {
   display: none;
 }
 
-.hero-ver {
+.hero__continuation {
   margin-left: 2rem;
 }
 
-.features-bar {
+.benefits-marquee {
   width: 100%;
   padding: 20px 0;
 }
 
-.features-track {
+.benefits-marquee__track {
   display: flex;
   width: max-content;
   animation: move 20s linear infinite;
@@ -243,17 +243,17 @@ nav a {
 
 /* Features Bar */
 
-.features-bar {
+.benefits-marquee {
   overflow: hidden;
 }
 
-.features-track {
+.benefits-marquee__track {
   display: flex;
   width: max-content;
   will-change: transform;
 }
 
-.features-list {
+.benefits-marquee__list {
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -261,7 +261,7 @@ nav a {
 
 /* Text */
 
-.features-list p {
+.benefits-marquee__list p {
   margin: 0;
   padding: 30px 64px;
   color: #fff;
@@ -275,7 +275,7 @@ nav a {
 
 /* Stars */
 
-.features-list img {
+.benefits-marquee__list img {
   width: 32px;
   height: 32px;
   display: block;
@@ -287,25 +287,25 @@ nav a {
   z-index: 2;
 }
 
-.collections-header {
+.collections__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.collections-more {
+.collections__more {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.collections-more p {
+.collections__more p {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
 }
 
-.collections-more img {
+.collections__more img {
   width: 40px;
   height: 40px;
 }
@@ -321,7 +321,7 @@ nav a {
   font-weight: 400;
 }
 
-.collections-products {
+.collections__grid {
   display: grid;
   grid-template-columns: 50% 14% 24%;
   margin-top: 58px;
@@ -337,7 +337,7 @@ nav a {
    COLLECTION IMAGE
 ========================= */
 
-.collection-image {
+.collections__feature-image {
   grid-column: 1;
   grid-row: 1 / 3;
   width: 100%;
@@ -345,7 +345,7 @@ nav a {
   overflow: hidden;
 }
 
-.collection-image img {
+.collections__feature-image img {
   width: 100%;
   height: 100%;
   display: block;
@@ -354,11 +354,11 @@ nav a {
 
 /* Desktop image */
 
-.collection-image img:first-child {
+.collections__feature-image img:first-child {
   display: none;
 }
 
-.collection-image img:last-child {
+.collections__feature-image img:last-child {
   display: block;
 }
 
@@ -368,19 +368,19 @@ nav a {
   justify-content: space-between;
 }
 
-.product-title {
+.product-card__title {
   margin: 0;
   max-width: 80%;
   font-weight: 400;
   font-size: 17px;
 }
 
-.shopping-bag {
+.product-card__cart-icon {
   width: 20px;
   height: 20px;
 }
 
-.featured-products {
+.new-arrivals {
   background: #292929;
   color: #fff;
   margin-top: 174px;
@@ -388,21 +388,21 @@ nav a {
   padding: 127px 80px;
 }
 
-.featured-header {
+.new-arrivals__header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 60px;
 }
 
-.featured-title {
+.new-arrivals__heading {
   display: flex;
   flex-direction: column;
   margin-left: 4%;
   gap: 18px;
 }
 
-.featured-title h2 {
+.new-arrivals__heading h2 {
   margin: 0;
   color: #f2f2f2;
   font-family: "Cormorant Garamond", serif;
@@ -411,7 +411,7 @@ nav a {
   line-height: 1;
 }
 
-.featured-title p {
+.new-arrivals__heading p {
   margin: 0;
   color: #b8b8b8;
   font-family: "Poppins", sans-serif;
@@ -420,14 +420,14 @@ nav a {
   line-height: 1.4;
 }
 
-.featured-navigation {
+.new-arrivals__navigation {
   display: flex;
   align-items: center;
   gap: 28px;
   padding-top: 48px;
 }
 
-.featured-navigation button {
+.new-arrivals__navigation button {
   width: 26px;
   height: 26px;
   padding: 0;
@@ -437,7 +437,7 @@ nav a {
   cursor: pointer;
 }
 
-.featured-navigation span {
+.new-arrivals__navigation span {
   display: block;
   font-family: Arial, sans-serif;
   font-size: 38px;
@@ -449,7 +449,7 @@ nav a {
    Products Grid
 ========================= */
 
-.featured-list {
+.new-arrivals__grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-auto-flow: row;
@@ -458,39 +458,39 @@ nav a {
   align-content: center;
   justify-content: center;
 }
-.featured-item {
+.new-arrivals__card {
   width: 300px;
   background: #292929;
   padding: 0 8px 14px;
 }
 
-.featured-image {
+.new-arrivals__image {
   width: 100%;
   height: 300px;
   overflow: hidden;
 }
 
-.featured-image img {
+.new-arrivals__image img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
 
-.featured-details {
+.new-arrivals__details {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   margin: 16px 8px 0px 8px;
 }
 
-.featured-content {
+.new-arrivals__content {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.featured-content h3 {
+.new-arrivals__content h3 {
   margin: 0;
   color: #f2f2f2;
   font-family: "Poppins", sans-serif;
@@ -499,7 +499,7 @@ nav a {
   line-height: 1;
 }
 
-.featured-content p {
+.new-arrivals__content p {
   margin: 0;
   color: #aaa;
   font-family: "Poppins", sans-serif;
@@ -508,7 +508,7 @@ nav a {
   line-height: 1;
 }
 
-.featured-bag {
+.new-arrivals__cart-button {
   width: 24px;
   height: 24px;
   padding: 0;
@@ -518,7 +518,7 @@ nav a {
   cursor: pointer;
 }
 
-.featured-bag img {
+.new-arrivals__cart-button img {
   width: 100%;
   height: 100%;
   display: block;

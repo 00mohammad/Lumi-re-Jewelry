@@ -1,5 +1,5 @@
-const track = document.querySelector(".features-track");
-const lists = document.querySelectorAll(".features-list");
+const track = document.querySelector(".benefits-marquee__track");
+const lists = document.querySelectorAll(".benefits-marquee__list");
 
 let position = 0;
 const speed = 1;
