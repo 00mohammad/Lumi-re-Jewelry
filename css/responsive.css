@@ -204,12 +204,6 @@
     height: auto;
   }
 
-  /* Hide Desktop Image */
-
-  .collection-desktop-image {
-    display: none;
-  }
-
   /* Show Mobile Image */
 
   .collection-mobile-image {
@@ -295,10 +289,6 @@
     height: auto;
     object-fit: contain;
     position: relative;
-  }
-
-  .collection-desktop-image {
-    display: none;
   }
 
   /* PRODUCT CARDS */
@@ -578,11 +568,6 @@
     height: auto;
   }
 
-  /* Hide desktop image */
-  .collection-desktop-image {
-    display: none;
-  }
-
   .featured-item {
     width: 100%;
   }
@@ -778,12 +763,6 @@
     display: block;
     width: 100%;
     height: auto;
-  }
-
-  /* Hide desktop image */
-
-  .collection-desktop-image {
-    display: none;
   }
 
   .featured-item {
