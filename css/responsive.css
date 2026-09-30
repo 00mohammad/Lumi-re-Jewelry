@@ -22,11 +22,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .hero .header-bottom {
-    gap: 5%;
-    padding: 0 40px;
-  }
-
   .hero .hero-title {
     font-size: 4.5rem;
   }
@@ -115,8 +110,15 @@
   }
 
   .collections-products {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: 50% 14% 24%;
+    margin-top: 58px;
+    align-items: center;
+    grid-auto-flow: row;
+    align-content: space-between;
+    justify-content: center;
+    justify-items: start;
+    column-gap: 8rem;
   }
 
   .collection-image {
