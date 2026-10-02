@@ -12,12 +12,20 @@
   }
 
   .product-title {
-    max-width: 60%;
+    max-width: 100%;
     font-weight: 400;
     font-size: 17px;
   }
+
   .featured-title {
     margin-left: 1%;
+  }
+
+  .collections-products {
+    grid-template-columns: 48% 22% 26%;
+  }
+  .shopping-bag-icon {
+    bottom: 45px;
   }
 }
 
