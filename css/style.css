@@ -462,7 +462,6 @@ nav a {
 /* =========================
    Products Grid
 ========================= */
-
 .featured-list {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -471,11 +470,6 @@ nav a {
   justify-items: center;
   align-content: center;
   justify-content: center;
-}
-.featured-item {
-  width: 300px;
-  background: #292929;
-  padding: 0 8px 14px;
 }
 
 .featured-image {
