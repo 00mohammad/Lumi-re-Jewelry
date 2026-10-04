@@ -10,100 +10,105 @@ const nextButton = document.querySelector(
 
 const items = [...featuredList.querySelectorAll(".featured-item")];
 
-const gap =
-  parseFloat(getComputedStyle(featuredList).gap) || 0;
+let isScrolling = false;
 
-const itemWidth = items[0].offsetWidth + gap;
+function isMobileCarousel() {
+  return window.innerWidth === 375 || window.innerWidth === 425;
+}
 
+function getItemWidth() {
+  const item = featuredList.querySelector(".featured-item");
 
-// Clone first items
+  if (!item) return 0;
 
-items.forEach((item) => {
-  const clone = item.cloneNode(true);
+  const gap = parseFloat(getComputedStyle(featuredList).gap) || 0;
 
-  clone.classList.add("featured-clone");
+  return item.offsetWidth + gap;
+}
 
-  featuredList.appendChild(clone);
-});
+function enableCarousel() {
+  if (!isMobileCarousel()) return;
 
+  // Clone first items
+  items.forEach((item) => {
+    const clone = item.cloneNode(true);
 
-// Clone last items
+    clone.classList.add("featured-clone");
 
-items.forEach((item) => {
-  const clone = item.cloneNode(true);
+    featuredList.appendChild(clone);
+  });
 
-  clone.classList.add("featured-clone");
+  // Clone last items
+  items.forEach((item) => {
+    const clone = item.cloneNode(true);
 
-  featuredList.insertBefore(
-    clone,
-    featuredList.firstChild,
-  );
-});
+    clone.classList.add("featured-clone");
 
+    featuredList.insertBefore(clone, featuredList.firstChild);
+  });
 
-// Start from the original first item
+  // Start from original items
+  const itemWidth = getItemWidth();
 
-featuredList.scrollLeft =
-  itemWidth * items.length;
+  featuredList.scrollLeft = itemWidth * items.length;
+}
 
+function smoothScroll(distance, duration = 700) {
+  if (isScrolling) return;
 
-// Slow smooth scroll
+  isScrolling = true;
 
-function smoothScroll(distance, duration = 1000) {
   const start = featuredList.scrollLeft;
   const startTime = performance.now();
 
   function animate(currentTime) {
     const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
 
-    const progress = Math.min(
-      elapsed / duration,
-      1,
-    );
+    const ease = 1 - Math.pow(1 - progress, 3);
 
-    const ease =
-      1 - Math.pow(1 - progress, 3);
-
-    featuredList.scrollLeft =
-      start + distance * ease;
+    featuredList.scrollLeft = start + distance * ease;
 
     if (progress < 1) {
       requestAnimationFrame(animate);
+    } else {
+      isScrolling = false;
+      checkInfiniteLoop();
     }
   }
 
   requestAnimationFrame(animate);
 }
 
+function checkInfiniteLoop() {
+  const itemWidth = getItemWidth();
+  const totalWidth = itemWidth * items.length;
 
-// Next
-
-nextButton.addEventListener("click", () => {
-  smoothScroll(itemWidth, 1000);
-});
-
-
-// Previous
-
-prevButton.addEventListener("click", () => {
-  smoothScroll(-itemWidth, 1000);
-});
-
-
-// Infinite loop
-
-featuredList.addEventListener("scroll", () => {
-  const totalWidth =
-    itemWidth * items.length;
-
-  if (
-    featuredList.scrollLeft >=
-    totalWidth * 2
-  ) {
+  if (featuredList.scrollLeft >= totalWidth * 2) {
     featuredList.scrollLeft -= totalWidth;
   }
 
   if (featuredList.scrollLeft <= 0) {
     featuredList.scrollLeft += totalWidth;
   }
+}
+
+nextButton.addEventListener("click", () => {
+  if (!isMobileCarousel()) return;
+
+  smoothScroll(getItemWidth());
 });
+
+prevButton.addEventListener("click", () => {
+  if (!isMobileCarousel()) return;
+
+  smoothScroll(-getItemWidth());
+});
+
+featuredList.addEventListener("scroll", () => {
+  if (!isMobileCarousel()) return;
+
+  checkInfiniteLoop();
+});
+
+enableCarousel();
