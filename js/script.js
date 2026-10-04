@@ -1,3 +1,25 @@
+const track = document.querySelector(".features-track");
+const lists = document.querySelectorAll(".features-list");
+
+let position = 0;
+const speed = 1;
+
+function moveFeatures() {
+  position -= speed;
+
+  const firstListWidth = lists[0].offsetWidth;
+
+  if (Math.abs(position) >= firstListWidth) {
+    position = 0;
+  }
+
+  track.style.transform = `translateX(${position}px`;
+
+  requestAnimationFrame(moveFeatures);
+}
+
+moveFeatures();
+
 const featuredList = document.querySelector(".featured-list");
 
 const prevButton = document.querySelector(
@@ -57,6 +79,8 @@ function smoothScroll(distance, duration = 700) {
   if (isScrolling) return;
 
   isScrolling = true;
+
+  // Slow smooth scroll
 
   const start = featuredList.scrollLeft;
   const startTime = performance.now();

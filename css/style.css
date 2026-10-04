@@ -474,10 +474,6 @@ nav a {
   justify-content: center;
 }
 
-.featured-item featured-clone{
-  display: none;
-}
-
 .featured-image {
   width: 100%;
   height: 300px;
