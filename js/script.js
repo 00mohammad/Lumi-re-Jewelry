@@ -49,7 +49,7 @@ function getItemWidth() {
 }
 
 function enableCarousel() {
-  if (!isMobileCarousel()) return;
+  if (!isMobileCarousel()) return;     
 
   // Clone first items
   items.forEach((item) => {

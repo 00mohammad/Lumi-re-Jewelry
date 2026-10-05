@@ -837,6 +837,7 @@
   .featured-content h3 {
     font-weight: 400;
     font-size: 15px;
+    margin: 0;
   }
 
   .featured-content p {
@@ -1110,6 +1111,7 @@
   .featured-content h3 {
     font-weight: 400;
     font-size: 15px;
+    margin: 0;
   }
 
   .featured-content p {
