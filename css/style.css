@@ -452,6 +452,11 @@ nav a {
   cursor: pointer;
 }
 
+.featured-navigation svg {
+  width: 38px;
+  height: 38px;
+}
+
 .featured-navigation span {
   display: block;
   font-family: Arial, sans-serif;

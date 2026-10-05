@@ -35,7 +35,7 @@ const items = [...featuredList.querySelectorAll(".featured-item")];
 let isScrolling = false;
 
 function isMobileCarousel() {
-  return window.innerWidth === 375 || window.innerWidth === 425;
+  return window.innerWidth <= 768;
 }
 
 function getItemWidth() {
