@@ -602,82 +602,6 @@ nav a {
   color: #1c1c1c;
 }
 
-footer {
-  width: 100%;
-  padding: 165px 80px 144px;
-  background: #fff;
-}
-
-.footer-container {
-  width: 100%;
-  max-width: 1296px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.7fr 1fr 1fr;
-  gap: 5%;
-  align-items: center;
-}
-
-/* Images */
-
-.footer-image {
-  width: 100%;
-  overflow: hidden;
-}
-
-.footer-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.footer-image-left {
-  height: auto;
-  aspect-ratio: 543 / 653;
-}
-
-.footer-image-top {
-  aspect-ratio: 1;
-}
-
-.footer-image-bottom {
-  max-width: 317px;
-  aspect-ratio: 1;
-}
-
-/* Center */
-
-.footer-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 80px;
-}
-
-.footer-image-top img {
-  filter: grayscale(100%);
-}
-
-.footer-newsletter {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3.5rem;
-  gap: 40px;
-}
-
-.footer-newsletter p {
-  margin: 0;
-  color: #929292;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 300z;
-}
-
 /* Newsletter Button */
 
 .newsletter-button {
@@ -743,10 +667,146 @@ footer {
   flex-shrink: 0;
 }
 
-/* Right */
+/* =========================
+   FOOTER MAIN
+========================= */
+
+.footer-main {
+  width: 100%;
+  padding: 165px 80px 144px;
+  background-color: #ffffff;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr;
+  gap: 5%;
+  align-items: center;
+}
+
+/* =========================
+   FOOTER IMAGES
+========================= */
+
+.footer-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-image-left {
+  aspect-ratio: 543 / 653;
+}
+
+.footer-image-top {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.footer-image-bottom {
+  width: 100%;
+  max-width: 317px;
+  aspect-ratio: 1 / 1;
+}
+
+.footer-image-top img,
+.footer-image-bottom img {
+  filter: grayscale(100%);
+}
+
+/* =========================
+   FOOTER CENTER
+========================= */
+
+.footer-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.footer-newsletter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 3.5rem;
+}
+
+.footer-newsletter p {
+  margin: 0;
+  color: #929292;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+/* =========================
+   NEWSLETTER BUTTON
+========================= */
+
+.newsletter-button {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  text-decoration: none;
+}
+
+.newsletter-button-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-text {
+  position: relative;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.newsletter-arrow {
+  position: absolute;
+  top: 50%;
+  right: 27px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.newsletter-button:hover .newsletter-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* =========================
+   FOOTER RIGHT
+========================= */
 
 .footer-right {
   width: 100%;
+  min-width: 0;
   height: 653px;
   display: flex;
   flex-direction: column;
@@ -754,22 +814,12 @@ footer {
   justify-content: space-between;
 }
 
-.footer-image-bottom img {
-  filter: grayscale(100%);
-}
-
 .footer-sun-jewelry {
   display: block;
   width: 100%;
   max-width: 250px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
-}
-
-.footer-image-bottom {
-  width: 100%;
-  max-width: 317px;
-  aspect-ratio: 1;
 }
 
 /* =========================
@@ -787,10 +837,11 @@ footer {
 
 .footer-bottom-container {
   width: 100%;
-  padding: 0 5.7%;
+  padding: 18px 5.7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 /* Logo */
@@ -799,17 +850,20 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
   text-decoration: none;
   color: #ffffff;
 }
 
 .footer-logo img {
+  display: block;
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
 
 .footer-logo span {
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -819,6 +873,7 @@ footer {
 .footer-copyright {
   margin: 0;
   color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 400;
   text-align: center;
@@ -830,16 +885,24 @@ footer {
   display: flex;
   align-items: center;
   gap: 26px;
+  flex-shrink: 0;
 }
 
 .footer-socials a {
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-size: 18px;
   text-decoration: none;
   transition: opacity 0.3s ease;
+}
+
+.footer-socials a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .footer-socials a:hover {
