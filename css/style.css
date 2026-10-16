@@ -669,6 +669,44 @@ nav a {
 }
 
 /* =========================
+   NEWSLETTER BUTTON
+========================= */
+
+.newsletter-button {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  text-decoration: none;
+}
+
+.newsletter-button-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-arrow {
+  position: absolute;
+  top: 50%;
+  left: 83%000000;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.newsletter-button:hover .newsletter-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* =========================
    FOOTER MAIN
 ========================= */
 
@@ -753,44 +791,6 @@ nav a {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 300;
-}
-
-/* =========================
-   NEWSLETTER BUTTON
-========================= */
-
-.newsletter-button {
-  position: relative;
-  width: 100%;
-  max-width: 300px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #111111;
-  text-decoration: none;
-}
-
-.newsletter-button-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.newsletter-arrow {
-  position: absolute;
-  top: 50%;
-  left: 83%000000;
-  width: 24px;
-  height: 24px;
-  transform: translateY(-50%);
-  z-index: 1;
-  transition: transform 0.3s ease;
-}
-
-.newsletter-button:hover .newsletter-arrow {
-  transform: translate(3px, -3px);
 }
 
 /* =========================
