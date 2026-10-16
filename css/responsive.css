@@ -438,14 +438,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 36px;
     height: 36px;
-
     padding: 0;
     border: 0;
     background: transparent;
-
     color: #fff;
     cursor: pointer;
   }
@@ -501,10 +498,8 @@
 
   .featured-product-image {
     display: block;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
   }
 
@@ -567,16 +562,6 @@
     font-size: 12px;
   }
 
-  .newsletter-button {
-    grid-column: 1 / -1;
-    width: 100%;
-    height: 43px;
-    margin-top: 6px;
-    padding-left: 46px;
-    padding-right: 5px;
-    font-size: 16px;
-  }
-
   .newsletter-icon {
     width: 35px;
     height: 35px;
@@ -585,24 +570,6 @@
 
   /* Newsletter button at bottom */
 
-  .newsletter-button {
-    grid-column: 1 / -1;
-    grid-row: 4;
-    width: 100%;
-    max-width: none;
-    height: 60px;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 8px 0 30px;
-    margin-top: 10px;
-    border-radius: 40px;
-    background: #dca348;
-    color: #171717;
-    font-size: 21px;
-  }
-
   .newsletter-icon {
     width: 46px;
     height: 46px;
@@ -610,20 +577,6 @@
     align-items: center;
     justify-content: center;
     font-size: 32px;
-  }
-
-  .newsletter-button {
-    grid-area: button;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 60px;
-    margin: 31px 0 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
   }
 
   .newsletter-button-bg {
@@ -741,20 +694,10 @@
     align-items: center;
     justify-content: center;
     align-self: flex-start;
-
-    width: 200%;
-    max-width: none;
-    height: 60px;
+    width: 336px;
     margin-top: 25px;
     box-sizing: border-box;
     text-decoration: none;
-  }
-
-  .newsletter-button-bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
   }
 
   .newsletter-text {
@@ -763,16 +706,6 @@
     font-size: 23px;
     white-space: nowrap;
     transform: translateX(-8px);
-  }
-
-  .newsletter-arrow {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    right: 16px;
-    width: 28px;
-    height: 28px;
-    transform: translateY(-50%);
   }
 
   /* Right Section */
@@ -1240,22 +1173,6 @@
     margin: 50px 0 30px 0;
   }
 
-  .newsletter-button {
-    height: 43px;
-  }
-
-  .newsletter-button {
-    height: 60px;
-    min-height: 60px;
-    padding-left: 28px;
-    font-size: 21px;
-  }
-
-  .newsletter-button {
-    height: 60px;
-    margin-top: 31px;
-  }
-
   .footer-main {
     padding: 22px 10px 25px;
   }
@@ -1289,7 +1206,7 @@
   }
 
   .newsletter-button {
-    width: 200%;
+    width: 336px;
     height: 60px;
     margin-top: 31px;
   }
@@ -1317,6 +1234,16 @@
   .footer-image-bottom {
     width: 100%;
     aspect-ratio: 164 / 159;
+  }
+
+  .footer-image-bottom img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .footer-image-top img {
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -1624,10 +1551,8 @@
   }
 
   .newsletter-button {
-    height: 60px;
-    min-height: 60px;
-    padding-left: 28px;
-    font-size: 21px;
+    height: 70px;
+    left: 20px;
   }
 
   .newsletter-icon {
@@ -1641,7 +1566,7 @@
   }
 
   .newsletter-arrow {
-    right: 12px;
+    left: 73%;
   }
 
   .footer-main {
@@ -1657,32 +1582,27 @@
   }
 
   .footer-newsletter p {
-    font-size: 14px;
-  }
-
-  .newsletter-button {
-    height: 60px;
-    margin-top: 31px;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 10px;
   }
 
   .newsletter-text {
     font-size: 21px;
   }
 
-  .newsletter-arrow {
-    right: 12px;
-  }
-
   .footer-right {
+    margin-top: -24rem;
     gap: 28px;
   }
 
   .footer-sun-jewelry {
-    max-width: 115px;
+    width: 112px;
+    height: 112px;
   }
 
   .footer-bottom {
-    margin-top: 22px;
+    margin-top: 20%;
   }
 }
 
