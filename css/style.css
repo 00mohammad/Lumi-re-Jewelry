@@ -694,7 +694,7 @@ nav a {
 .newsletter-arrow {
   position: absolute;
   top: 50%;
-  left: 83%000000;
+  left: 83%;
   width: 24px;
   height: 24px;
   transform: translateY(-50%);
@@ -702,7 +702,7 @@ nav a {
   transition: transform 0.3s ease;
 }
 
-.newsletter-button:hover .newsletter-arrow {
+.newsletter-button.newsletter-arrow {
   transform: translate(3px, -3px);
 }
 
