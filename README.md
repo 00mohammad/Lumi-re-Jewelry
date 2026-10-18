@@ -4,6 +4,10 @@
 
 **</>** [View Source Code](https://github.com/00mohammad/Lumi-re-Jewelry)
 
+## 🎨 Design
+
+🔗 Figma Design  
+https://www.figma.com/design/MXs9G08T5IzsMjQsxu5yo7/Jewelry-Shop---Landing-Page--Community-?node-id=5-2381&t=G7CedKziKa62FGJe-0
 
 # 💎 Lumière Jewelry
 
@@ -56,10 +60,10 @@ The project focuses on creating a visually appealing interface with responsive l
 
 The interface was designed in **Figma** before development.
 
-| Device | Width |
-|--------|------:|
+| Device     |  Width |
+| ---------- | -----: |
 | 💻 Desktop | 1440px |
-| 📱 Mobile | 375px |
+| 📱 Mobile  |  375px |
 
 ---
 
@@ -141,10 +145,10 @@ Open **index.html** directly in your browser, or use **Live Server** in Visual S
 
 Designed and optimized for:
 
-| Device | Width |
-|--------|------:|
+| Device     |  Width |
+| ---------- | -----: |
 | 💻 Desktop | 1440px |
-| 📱 Mobile | 375px |
+| 📱 Mobile  |  375px |
 
 ---
 

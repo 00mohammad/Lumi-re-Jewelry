@@ -1174,7 +1174,7 @@
   }
 
   .footer-main {
-    padding: 22px 10px 25px;
+    padding: 60px 20px 60px;
   }
 
   .footer-container {
@@ -1201,15 +1201,14 @@
   }
 
   .footer-newsletter p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.2;
   }
 
   .newsletter-button {
     height: 70px;
     left: 50px;
-    margin-top: 45px;
-    margin-bottom: 15px;
+    margin-bottom: -20px;
   }
 
   .newsletter-text {
@@ -1576,7 +1575,7 @@
   }
 
   .footer-main {
-    padding: 22px 10px 25px;
+    padding: 60px 20px 60px;
   }
 
   .footer-image-left {
@@ -1598,7 +1597,7 @@
   }
 
   .footer-right {
-    margin-top: -25rem;
+    margin-top: -23rem;
     gap: 28px;
   }
 
